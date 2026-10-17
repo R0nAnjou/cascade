@@ -1,0 +1,9 @@
+[project]
+name = "vllm-cascade-patch"
+version = "0.1.0"
+
+[tool.setuptools.packages.find]
+include = ["vllm_cascade_patch*"]
+
+[project.entry-points."vllm.general_plugins"]
+cascade_patch = "vllm_cascade_patch:register"
